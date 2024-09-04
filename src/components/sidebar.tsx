@@ -2,17 +2,15 @@
 
 import Image from "next/image";
 import React from "react";
-import { useState } from "react";
+import "flowbite";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
   return (
     <>
       <button
-        data-drawer-target="logo-sidebar"
-        data-drawer-toggle="logo-sidebar"
-        aria-controls="logo-sidebar"
+        data-drawer-target="sidebar"
+        data-drawer-toggle="sidebar"
+        aria-controls="sidebar"
         type="button"
         className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       >
@@ -33,9 +31,9 @@ const Sidebar = () => {
       </button>
 
       <aside
-        id="logo-sidebar"
+        id="sidebar"
         className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
-        aria-label="Sidebar"
+        aria-label="sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-[var(--background-playstation-color)]">
           <a href="" className="flex items-center ps-2.5 mb-5">
