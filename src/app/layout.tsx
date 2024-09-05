@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Press_Start_2P } from "next/font/google";
+import { Handjet } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
 
-const press_start_2p = Press_Start_2P({ subsets: ["latin"], weight: "400" });
+const handjet = Handjet({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Zacky Portfolio",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={press_start_2p.className}>
+      <body className={handjet.className}>
         <Sidebar />
         {children}
       </body>

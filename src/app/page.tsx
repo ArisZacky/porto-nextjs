@@ -2,7 +2,6 @@
 import TypeIt from "typeit-react";
 import Image from "next/image";
 import MyPhotos from "../../public/Images/MyPhotos.jpg";
-import Sidebar from "@/components/sidebar";
 
 export default function Home() {
   return (

@@ -46,7 +46,7 @@ const Sidebar = () => {
           <ul className="space-y-2 font-medium">
             <li>
               <a
-                href="/profile"
+                href="/"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <Image
@@ -61,7 +61,7 @@ const Sidebar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/profile"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <Image
