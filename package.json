@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "flowbite": "^2.5.1",
+    "nes.css": "^2.3.0",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
+    "sweetalert2": "^11.13.2",
     "typeit-react": "^2.7.2"
   },
   "devDependencies": {
