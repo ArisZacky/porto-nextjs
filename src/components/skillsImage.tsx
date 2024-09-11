@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 interface SkillsImageProps {
@@ -15,7 +13,7 @@ const SkillsImage: React.FC<SkillsImageProps> = ({ image, altText }) => {
         alt={altText}
         width={64}
         height={64}
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
       />
     </>
   );

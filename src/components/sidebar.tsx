@@ -79,7 +79,7 @@ const Sidebar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/project"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image

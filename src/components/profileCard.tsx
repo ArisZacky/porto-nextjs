@@ -1,6 +1,5 @@
-"use client";
-
-import SkillsContent from "./skillsContent";
+import SkillsPanel from "./skillsPanel";
+import InterestPanel from "./interestPanel";
 
 const ProfileCard = (props) => {
   return (
@@ -14,11 +13,11 @@ const ProfileCard = (props) => {
           >
             <option>Profile</option>
             <option>Skills</option>
-            <option>Hobbies</option>
+            <option>Interest</option>
           </select>
         </div>
         <ul
-          className="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+          className="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse m-0"
           id="fullWidthTab"
           data-tabs-toggle="#fullWidthTabContent"
           data-tabs-active-classes="hover:text-gray-600"
@@ -32,7 +31,7 @@ const ProfileCard = (props) => {
               role="tab"
               aria-controls="profile"
               aria-selected="true"
-              className="inline-block w-full p-4 rounded-ss-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 aria-selected:text-gray-900 aria-selected:bg-gray-100 "
+              className="inline-block w-full p-4 rounded-ss-lg bg-gray-50 hover:bg-gray-100 focus:outline-none aria-selected:text-gray-900 aria-selected:bg-gray-100"
             >
               Profile
             </button>
@@ -45,24 +44,24 @@ const ProfileCard = (props) => {
               role="tab"
               aria-controls="skills"
               aria-selected="false"
-              className="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 aria-selected:text-gray-900 aria-selected:bg-gray-100 "
+              className="inline-block w-full p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none aria-selected:text-gray-900 aria-selected:bg-gray-100"
             >
               Skills
             </button>
           </li>
-          {/* <li className="w-full">
+          <li className="w-full">
             <button
-              id="hobbies-tab"
-              data-tabs-target="#hobbies"
+              id="Interest-tab"
+              data-tabs-target="#Interest"
               type="button"
               role="tab"
-              aria-controls="hobbies"
+              aria-controls="Interest"
               aria-selected="false"
-              className="inline-block w-full p-4 rounded-se-lg bg-gray-50 hover:bg-gray-100 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 aria-selected:text-gray-900 aria-selected:bg-gray-100"
+              className="inline-block w-full p-4 rounded-se-lg bg-gray-50 hover:bg-gray-100 focus:outline-none aria-selected:text-gray-900 aria-selected:bg-gray-100"
             >
-              Hobbies
+              Interest
             </button>
-          </li> */}
+          </li>
         </ul>
         <div
           id="fullWidthTabContent"
@@ -76,40 +75,39 @@ const ProfileCard = (props) => {
             aria-labelledby="profile-tab"
           >
             <div className="max-w">
-              <p className="text-gray-900 mb-2">
+              <p className="text-gray-900 mb-2 text-xs sm:text-base">
                 <span className="font-bold">Name: </span>
                 {props.name}
               </p>
-              <p className="text-gray-900 mb-2">
+              <p className="text-gray-900 mb-2 text-xs sm:text-base">
                 <span className="font-bold">Species: </span>
                 {props.species}
               </p>
-              <p className="text-gray-900 mb-2">
+              <p className="text-gray-900 mb-2 text-xs sm:text-base">
                 <span className="font-bold">Age: </span>
                 {props.age}
               </p>
-              <p className="text-gray-900 mb-2">
+              <p className="text-gray-900 mb-2 text-xs sm:text-base">
                 <span className="font-bold">Occupation: </span>
                 {props.occupation}
               </p>
-              <p className="text-gray-900 mb-2">
+              <p className="text-gray-900 mb-2 text-xs sm:text-base">
                 <span className="font-bold">Faction: </span>
                 {props.faction}
               </p>
-              <p className="text-gray-900 text-justify mb-2">
+              <p className="text-gray-900 text-justify mb-2 text-xs sm:text-base">
                 <span className="font-bold">Background: </span>
                 {props.background}
               </p>
               <a
-                href="https://drive.google.com/file/d/1s4zxtKG1X3z6OXUq6R2ECKmMfMjVb4I3/view?usp=sharing"
+                href="https://drive.google.com/file/d/1p9Q0OaYoxBIUHyttyR5GXVibdt8cy-Kf/view?usp=sharing"
                 target="_blank"
-                className="text-gray-900 font-bold bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 text-xs font-medium rounded-lg px-5 py-2.5 mt-3 w-fit"
+                className="nes-btn w-fit text-xs sm:text-base"
               >
                 Download His CV
               </a>
             </div>
           </div>
-
           {/* Tab Skills */}
           <div
             className="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
@@ -117,17 +115,17 @@ const ProfileCard = (props) => {
             role="tabpanel"
             aria-labelledby="skills-tab"
           >
-            <SkillsContent />
+            <SkillsPanel />
           </div>
-          {/* Tab Hobbies
+          {/* Tab Hobbies */}
           <div
             className="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
-            id="hobbies"
+            id="Interest"
             role="tabpanel"
-            aria-labelledby="hobbies-tab"
+            aria-labelledby="Interest-tab"
           >
-            <div>tes</div>
-          </div> */}
+            <InterestPanel />
+          </div>
         </div>
       </div>
     </>
