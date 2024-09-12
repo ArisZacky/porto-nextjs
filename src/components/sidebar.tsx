@@ -39,9 +39,15 @@ const Sidebar = () => {
         <div className="h-full px-3 py-4 overflow-y-auto bg-[var(--background-playstation-color)]">
           <a
             href="/"
-            className="flex items-center ps-2.5 mb-5 hover:no-underline hover:text-gray-900"
+            className="flex items-center ps-2.5 mb-5 hover:no-underline hover:text-gray-900 gap-3"
           >
-            <i className="nes-icon coin"></i>
+            <Image
+              src="/PlaystationButtons/Playstation_logo_colour.svg"
+              alt="Circle Button"
+              width={24}
+              height={24}
+              priority
+            />{" "}
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-neutral-950 ">
               Zacky&apos;s
             </span>
@@ -105,6 +111,23 @@ const Sidebar = () => {
                   priority
                 />
                 <span className="flex-1 ms-3 whitespace-nowrap">Contact</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/certificate"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
+              >
+                <Image
+                  src="/PlaystationButtons/PlayStation_button_start.svg"
+                  alt="Start Button"
+                  width={24}
+                  height={24}
+                  priority
+                />
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Certificate
+                </span>
               </a>
             </li>
           </ul>
