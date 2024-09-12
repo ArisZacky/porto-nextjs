@@ -81,7 +81,7 @@ const ProfileCard = (props) => {
         <div className="border-t border-gray-200 dark:border-gray-600">
           {/* Tab Profile */}
           <div
-            className={`p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800 transition ease-in-out delay-150 ${
+            className={`p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800 transition ease-in-out delay-150 ${
               activeTab === "profile" ? "block" : "hidden"
             }`}
             id="profile"
