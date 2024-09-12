@@ -1,5 +1,12 @@
 "use client";
 
+import Triangle from "../../public/PlaystationButtons/PlayStation_button_T.svg";
+import Square from "../../public/PlaystationButtons/PlayStation_button_S.svg";
+import Circle from "../../public/PlaystationButtons/PlayStation_button_C.svg";
+import X from "../../public/PlaystationButtons/PlayStation_button_X.svg";
+import Start from "../../public/PlaystationButtons/PlayStation_button_Start.svg";
+import PlaystationLogo from "../../public/PlaystationButtons/Playstation_logo_colour.svg";
+
 import Image from "next/image";
 import React from "react";
 
@@ -42,12 +49,11 @@ const Sidebar = () => {
             className="flex items-center ps-2.5 mb-5 hover:no-underline hover:text-gray-900 gap-3"
           >
             <Image
-              src="/PlaystationButtons/Playstation_logo_colour.svg"
-              alt="Circle Button"
-              width={24}
-              height={24}
+              src={PlaystationLogo}
+              alt="Playstation Logo"
+              style={{ width: 24, height: "auto" }}
               priority
-            />{" "}
+            />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-neutral-950 ">
               Zacky&apos;s
             </span>
@@ -59,7 +65,7 @@ const Sidebar = () => {
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
-                  src="/PlaystationButtons/PlayStation_button_C.svg"
+                  src={Circle}
                   alt="Circle Button"
                   width={24}
                   height={24}
@@ -74,7 +80,7 @@ const Sidebar = () => {
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
-                  src="/PlaystationButtons/PlayStation_button_S.svg"
+                  src={Square}
                   alt="Square Button"
                   width={24}
                   height={24}
@@ -89,7 +95,7 @@ const Sidebar = () => {
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
-                  src="/PlaystationButtons/PlayStation_button_T.svg"
+                  src={Triangle}
                   alt="Triangle Button"
                   width={24}
                   height={24}
@@ -103,13 +109,7 @@ const Sidebar = () => {
                 href="/contact"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
-                <Image
-                  src="/PlaystationButtons/PlayStation_button_X.svg"
-                  alt="X Button"
-                  width={24}
-                  height={24}
-                  priority
-                />
+                <Image src={X} alt="X Button" width={24} height={24} priority />
                 <span className="flex-1 ms-3 whitespace-nowrap">Contact</span>
               </a>
             </li>
@@ -119,10 +119,9 @@ const Sidebar = () => {
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
-                  src="/PlaystationButtons/PlayStation_button_start.svg"
+                  src={Start}
                   alt="Start Button"
-                  width={24}
-                  height={24}
+                  style={{ width: 24, height: "auto" }}
                   priority
                 />
                 <span className="flex-1 ms-3 whitespace-nowrap">
