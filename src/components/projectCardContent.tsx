@@ -27,6 +27,7 @@ const CertificateCardContent: React.FC<CertificateCardContentProps> = ({
             height={150}
           />
           <div className="absolute rounded-lg bg-black/20 h-full w-full flex items-center justify-center -top-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 gap-3">
+            {/* if github != null then display this div */}
             {github && (
               <div>
                 <a href={github} className="">
@@ -34,6 +35,7 @@ const CertificateCardContent: React.FC<CertificateCardContentProps> = ({
                 </a>
               </div>
             )}
+            {/* if github != null then display this div */}
             {link && (
               <div>
                 <a href={link} className="">

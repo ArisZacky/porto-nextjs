@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import SkillsPanel from "./skillsPanel";
 import InterestPanel from "./interestPanel";
 
-const ProfileCard = (props) => {
+const ProfileCard = (props: any) => {
   const [activeTab, setActiveTab] = useState("profile");
 
-  const handleTabChange = (tabId) => {
+  const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
   };
 

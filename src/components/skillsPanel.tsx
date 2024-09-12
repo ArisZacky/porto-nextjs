@@ -31,7 +31,7 @@ const SkillsPanel = () => {
     },
   ];
 
-  const handleTabClick = (skill) => {
+  const handleTabClick = (skill: string) => {
     setActiveTab(skill);
   };
 
