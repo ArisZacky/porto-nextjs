@@ -10,6 +10,7 @@ const Footer = () => {
             <a
               href="https://github.com/ArisZacky"
               className="hover:underline me-4 md:me-6"
+              target="_blank"
             >
               <i className="nes-icon github"></i>
             </a>
@@ -18,6 +19,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/ariszacky/"
               className="hover:underline me-4 md:me-6"
+              target="_blank"
             >
               <i className="nes-icon linkedin"></i>
             </a>
@@ -26,6 +28,7 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/ariszcky/"
               className="hover:underline me-4 md:me-6"
+              target="_blank"
             >
               <i className="nes-icon instagram"></i>
             </a>

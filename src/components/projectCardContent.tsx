@@ -30,7 +30,7 @@ const CertificateCardContent: React.FC<CertificateCardContentProps> = ({
             {/* if github != null then display this div */}
             {github && (
               <div>
-                <a href={github} className="">
+                <a href={github} className="" target="_blank">
                   <i className="nes-icon github"></i>
                 </a>
               </div>
@@ -38,7 +38,7 @@ const CertificateCardContent: React.FC<CertificateCardContentProps> = ({
             {/* if github != null then display this div */}
             {link && (
               <div>
-                <a href={link} className="">
+                <a href={link} className="" target="_blank">
                   <Image
                     src="/eye.svg"
                     alt="Start Button"

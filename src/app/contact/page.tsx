@@ -46,7 +46,6 @@ export default function Contact() {
                 <label htmlFor="email_field">Email address</label>
                 <input
                   id="email_field"
-                  type="email"
                   className="nes-input"
                   placeholder="your.name@company.com"
                   required
