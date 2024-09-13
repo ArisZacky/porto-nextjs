@@ -73,7 +73,7 @@ const SkillsPanel = () => {
       </ul>
       <div id="fullWidthTabContent">
         <div
-          className={`p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800 ${
+          className={`p-4 rounded-lg md:p-8 dark:bg-gray-800 ${
             activeTab ? "block" : "hidden"
           }`}
           id={activeTab}

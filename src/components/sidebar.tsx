@@ -62,7 +62,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-200 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
                   src={Circle}
@@ -77,7 +77,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="/profile"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-200 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
                   src={Square}
@@ -92,7 +92,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="/project"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-200 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
                   src={Triangle}
@@ -107,7 +107,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="/contact"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-200 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image src={X} alt="X Button" width={24} height={24} priority />
                 <span className="flex-1 ms-3 whitespace-nowrap">Contact</span>
@@ -116,7 +116,7 @@ const Sidebar = () => {
             <li>
               <a
                 href="/certificate"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-100 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-200 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
                   src={Start}

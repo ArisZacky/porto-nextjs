@@ -38,8 +38,8 @@ const ProfileCard = (props: any) => {
               aria-selected={activeTab === "profile"}
               className={`inline-block w-full p-4 rounded-ss-lg ${
                 activeTab === "profile"
-                  ? "bg-gray-100 text-gray-900"
-                  : "bg-gray-50 text-gray-500 hover:bg-gray-100"
+                  ? "bg-gray-200 text-gray-900"
+                  : "bg-gray-100 text-gray-500 hover:bg-gray-200"
               } focus:outline-none`}
             >
               Profile
@@ -54,8 +54,8 @@ const ProfileCard = (props: any) => {
               aria-selected={activeTab === "skills"}
               className={`inline-block w-full p-4 ${
                 activeTab === "skills"
-                  ? "bg-gray-100 text-gray-900"
-                  : "bg-gray-50 text-gray-500 hover:bg-gray-100"
+                  ? "bg-gray-200 text-gray-900"
+                  : "bg-gray-100 text-gray-500 hover:bg-gray-200"
               } focus:outline-none`}
             >
               Skills
@@ -70,8 +70,8 @@ const ProfileCard = (props: any) => {
               aria-selected={activeTab === "interest"}
               className={`inline-block w-full p-4 rounded-se-lg ${
                 activeTab === "interest"
-                  ? "bg-gray-100 text-gray-900"
-                  : "bg-gray-50 text-gray-500 hover:bg-gray-100"
+                  ? "bg-gray-200 text-gray-900"
+                  : "bg-gray-100 text-gray-500 hover:bg-gray-200"
               } focus:outline-none`}
             >
               Interest
@@ -124,7 +124,7 @@ const ProfileCard = (props: any) => {
           </div>
           {/* Tab Skills */}
           <div
-            className={`p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800 transition ease-in-out delay-150 ${
+            className={`p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800 transition ease-in-out delay-150 ${
               activeTab === "skills" ? "block" : "hidden"
             }`}
             id="skills"
@@ -135,7 +135,7 @@ const ProfileCard = (props: any) => {
           </div>
           {/* Tab Interest */}
           <div
-            className={`p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800 transition ease-in-out delay-150 ${
+            className={`p-4 bg-gray-50 rounded-lg md:p-8 dark:bg-gray-800 transition ease-in-out delay-150 ${
               activeTab === "interest" ? "block" : "hidden"
             }`}
             id="interest"

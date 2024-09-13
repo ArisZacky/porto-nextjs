@@ -28,7 +28,7 @@ const projects: Project[] = [
     alt: "Intechfest 2023",
     title: "Intechfest 2023",
     github: "https://github.com/ArisZacky/intechfest23",
-    link: null,
+    link: "https://intechfest.cc/",
   },
   {
     src: project3,
