@@ -13,7 +13,7 @@ const CertificateCardContent: React.FC<CertificateCardContentProps> = ({
 }) => {
   return (
     <>
-      <div className="w-fit bg-gray-50 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="flex flex-col items-center w-fit bg-gray-50 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <Image
           className="rounded-xl p-2 mx-auto"
           src={src}

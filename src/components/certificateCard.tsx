@@ -1,5 +1,9 @@
-import certificate1 from "../../public/certifications/Certificate1.png";
-import certificate2 from "../../public/certifications/Certificate2.png";
+import msib6 from "../../public/certifications/MSIB-6.png";
+import python from "../../public/certifications/python.png";
+import intechfestDev from "../../public/certifications/intechfest-dev.png";
+import gamedev from "../../public/certifications/1st-place-game-dev.png";
+import bnsp from "../../public/certifications/junior-web-dev.png";
+
 import CertificateCardContent from "./certificateCardContent";
 import Image, { StaticImageData } from "next/image";
 interface Certificate {
@@ -10,39 +14,29 @@ interface Certificate {
 
 const certificates: Certificate[] = [
   {
-    src: certificate1,
+    src: msib6,
     alt: "Sertifikat MSIB",
     title: "MSIB 6",
   },
   {
-    src: certificate2,
-    alt: "Sertifikat Stechoq",
-    title: "Stechoq",
+    src: python,
+    alt: "Python",
+    title: "Python",
   },
   {
-    src: certificate2,
-    alt: "Sertifikat Stechoq",
-    title: "Stechoq",
+    src: intechfestDev,
+    alt: "Intechfest Developers",
+    title: "Intechfest Dev",
   },
   {
-    src: certificate2,
-    alt: "Sertifikat Stechoq",
-    title: "Stechoq",
+    src: gamedev,
+    alt: "Game Dev",
+    title: "Game Dev",
   },
   {
-    src: certificate2,
-    alt: "Sertifikat Stechoq",
-    title: "Stechoq",
-  },
-  {
-    src: certificate2,
-    alt: "Sertifikat Stechoq",
-    title: "Stechoq",
-  },
-  {
-    src: certificate2,
-    alt: "Sertifikat Stechoq",
-    title: "Stechoq",
+    src: bnsp,
+    alt: "BNSP Web Dev",
+    title: "BNSP Web Dev",
   },
 ];
 const CertificateCard = () => {
