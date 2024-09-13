@@ -24,14 +24,14 @@ export default function Contact() {
     if (resp.ok) {
       Toast.fire({
         icon: "success",
-        title: "Thanks for connecting with Zacky 😉",
+        title: "Thanks for connecting with Zacky. +450 Exp",
       });
       setInputEmail("");
       setInputContent("");
     } else {
       Toast.fire({
         icon: "error",
-        title: "Failed to connecting with Zacky :(",
+        title: "Failed to connecting with Zacky :(. -1000 Aura",
       });
     }
   }
