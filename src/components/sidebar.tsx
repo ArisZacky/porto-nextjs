@@ -106,16 +106,18 @@ const Sidebar = () => {
             </li>
             <li>
               <a
-                href="/contact"
+                href="/certificate"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-200 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image src={X} alt="X Button" width={24} height={24} priority />
-                <span className="flex-1 ms-3 whitespace-nowrap">Contact</span>
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Certificate
+                </span>
               </a>
             </li>
             <li>
               <a
-                href="/certificate"
+                href="/contact"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-neutral-950 hover:bg-gray-200 dark:hover:bg-gray-700 hover:no-underline hover:text-gray-900 group"
               >
                 <Image
@@ -124,9 +126,7 @@ const Sidebar = () => {
                   style={{ width: 24, height: "auto" }}
                   priority
                 />
-                <span className="flex-1 ms-3 whitespace-nowrap">
-                  Certificate
-                </span>
+                <span className="flex-1 ms-3 whitespace-nowrap">Contact</span>
               </a>
             </li>
           </ul>
